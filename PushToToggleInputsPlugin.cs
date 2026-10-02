@@ -33,12 +33,12 @@ namespace PushToToggleInputs
             WinchPullInShortcut = Config.Bind(
                 "Winch",
                 "Toggle pull in",
-                new KeyboardShortcut(KeyCode.PageUp),
+                new KeyboardShortcut(KeyCode.PageDown),
                 "Press while operating a winch to toggle pulling the rope in.");
             WinchPayOutShortcut = Config.Bind(
                 "Winch",
                 "Toggle pay out",
-                new KeyboardShortcut(KeyCode.PageDown),
+                new KeyboardShortcut(KeyCode.PageUp),
                 "Press while operating a winch to toggle paying rope out.");
 
             _harmony = new Harmony(PluginGuid);
